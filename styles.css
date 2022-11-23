@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+  
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 :root {
     --left-space: 48px;
   }
@@ -8,46 +16,78 @@
     padding: 0;
     font-family: sans-serif;
   }
-.content {
-  min-height: 100vh;
+  h2 {
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px; }
+  
+  p {
+    font-family: "Muli-SemiBold";
+    font-size: 20px;
+    color: #6d7f52;
+    text-align: center;
+    margin-bottom: 26px; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container,
+.logo{
   display: flex;
+  flex-flow: row wrap;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    margin: 0; 
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
 
-.image-section {
-    
-    background-image: url("./images/Background.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    text-align: center;
-    background-size: cover;
-  }
+.descriptionText {
+    font-size: larger;
+    font-weight: 400;
+    font-size: 1.4em;
+    padding: 90px 20px 20px 30px;
+}
+
+.mainForm {
+  background-color: #ffffff;
+  box-shadow: 0 2px rgba(110, 110, 110, 0.5);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.picture{
+  background-image: url(./images/Background.jpg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+ 
+}
+
+.logo{
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 20vh;
+  gap: 1vw;
+  padding: 15px 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  width: 20%;
   
-  a {
-    color: white;
-  }
-  
-  .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5.5rem;
-    font-family: "Montserrat";
-    margin-top: 20vh;
-    padding: 16px 0;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .banner img {
-    height: 125px;
-  }
-  
-  .banner h2{
-    margin: 0;
-  }
-  
-  .attribution {
-    font-size: 0.9rem;
-  }
+}
+
